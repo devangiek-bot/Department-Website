@@ -1,0 +1,290 @@
+/* Basic page styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #222;
+}
+
+/* Navigation bar */
+header {
+    background-color: #102747;
+    color: white;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 22px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-menu a:hover {
+    color: #e5bd68;
+}
+
+/* Homepage welcome section */
+.hero {
+    min-height: 80vh;
+    background: linear-gradient(135deg, #102747, #244e78);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.welcome {
+    color: #e5bd68;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.hero-description {
+    max-width: 650px;
+    line-height: 1.7;
+    margin: 25px 0;
+}
+
+.hero-button {
+    background-color: #e5bd68;
+    color: #102747;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero-button:hover {
+    background-color: white;
+}
+
+/* Mobile responsive styling */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+}
+/* Inner page banner */
+.page-banner {
+    background: #244e78;
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.page-banner h1 {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+/* Page content */
+.content-section {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.content-section h2 {
+    color: #102747;
+    margin-bottom: 18px;
+}
+
+.content-section p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.objectives-list {
+    padding-left: 25px;
+    line-height: 2;
+}
+
+footer {
+    background-color: #102747;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Smaller screens */
+@media (max-width: 768px) {
+    .content-section {
+        margin: 20px 12px;
+        padding: 22px;
+    }
+
+    .page-banner h1 {
+        font-size: 27px;
+    }
+}
+.faculty-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.faculty-card {
+    background: #f5f7fa;
+    padding: 20px;
+    width: 220px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.faculty-card h3 {
+    color: #102747;
+    margin-bottom: 10px;
+}
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.course-card {
+    background: #f5f7fa;
+    padding: 25px;
+    flex: 1;
+    min-width: 250px;
+    border-left: 4px solid #244e78;
+    border-radius: 5px;
+}
+
+.course-card h3 {
+    color: #102747;
+    margin-bottom: 12px;
+}
+
+.course-card p {
+    line-height: 1.7;
+}
+.activity-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.activity-card {
+    background: #f5f7fa;
+    padding: 25px;
+    flex: 1;
+    min-width: 220px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.activity-card h3 {
+    color: #102747;
+    margin-bottom: 12px;
+}
+
+.activity-card p {
+    line-height: 1.7;
+}
+.contact-details {
+    background: #f5f7fa;
+    padding: 25px;
+    margin-top: 20px;
+    border-left: 4px solid #244e78;
+}
+
+.contact-details h3 {
+    color: #102747;
+    margin-bottom: 15px;
+}
+
+.contact-details p {
+    margin-bottom: 15px;
+}
+
+.contact-details a {
+    color: #244e78;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+#welcome-section {
+    width: 100%;
+}
+/* Dropdown menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #102747;
+    min-width: 180px;
+    list-style: none;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
